@@ -45,7 +45,7 @@ app.get("/subscribers/:id", async(req,res) => {
             res.send(doc);
         }
     } catch(err) {
-        res.status(400).send({message: "Incoreect id format"})
+        res.status(400).send({message: err.message})
     }
 })
 
